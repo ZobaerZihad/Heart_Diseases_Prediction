@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Your Report </title>
+</head>
+<body class="background_1 intro">
+    <nav class="navbar background_1 sticky-top">
+        <ul class="nav-list">
+            <div class="logo"><img src="static/images/logo.jpg" alt="logo"></div>
+            <li><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('form') }}">REPORT CHECKING</a></li>
+        </ul>
+        
+    </nav>
+    <section class="result_1">
+        <h1>Result</h1>
+        <h2>{{ result }}</h2>
+    </section>
+    <section class ="section">
+        <div class="peras">
+        <p class="sectionTag text-big">
+            One renowned heart disease specialist is <b>Dr. John Smith</b>, a cardiologist with expertise in the field. Here are some of the advices Dr. Smith commonly gives to his patients:
+        </p>
+        <p class="sectionSubTag text-small">
+            <li><b>Lifestyle Modifications:</b> Dr. Smith emphasizes the importance of making healthy lifestyle changes. This includes following a balanced diet, engaging in regular physical activity, quitting smoking if applicable, and managing stress effectively.</li>
+
+            <li><b>Medication Management:</b> As a specialist, Dr. Smith carefully assesses each patient's condition and prescribes medications accordingly. He advises his patients to adhere to their prescribed medications, follow the recommended dosage, and report any side effects or concerns promptly.</li>
+
+            <li><b>Regular Monitoring:</b> Dr. Smith stresses the significance of regular check-ups and monitoring of heart-related parameters such as blood pressure, cholesterol levels, and blood sugar. This helps identify any changes or potential issues early on.</li>
+
+            <li><b>Risk Factor Control:</b> Dr. Smith educates his patients about the various risk factors for heart disease, such as high blood pressure, high cholesterol, diabetes, obesity, and a family history of heart disease. He emphasizes the importance of controlling these risk factors through lifestyle modifications and, if necessary, with the help of medications.</li>
+
+            <li><b>Treatment Options:</b> Dr. Smith discusses treatment options with his patients based on their specific condition. This may include procedures like angioplasty, stenting, or cardiac surgery. He ensures that his patients are well-informed about the benefits, risks, and expected outcomes of each procedure.</li>
+
+            <li><b>Patient Education:</b> Dr. Smith believes in empowering his patients through education. He provides them with information about heart disease, its causes, symptoms, and preventive measures. He encourages his patients to ask questions and actively participate in their treatment plan.</li>
+
+            <li><b>Emotional Support:</b> Dealing with heart disease can be emotionally challenging. Dr. Smith acknowledges this aspect and provides emotional support to his patients. He understands the importance of addressing their fears, concerns, and anxieties and encourages open communication.</li>
+        </p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

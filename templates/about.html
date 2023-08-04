@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>About </title>
+</head>
+<body class="background_2 intro">
+    <nav class="navbar background_2 sticky-top">
+        <ul class="nav-list">
+            <div class="logo"><img src="static/images/logo.jpg" alt="logo"></div>
+            <li><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('form') }}">REPORT CHECKING</a></li>
+        </ul>
+        
+    </nav>
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            About CORAZON
+        </p>
+        <p class="sectionSubTag text-small">
+            <p>Welcome to CORAZON, an innovative web platform dedicated to predicting heart disease using advanced machine learning techniques. Our goal is to provide users with a convenient and reliable tool to assess their risk of heart disease based on their medical reports.</p>
+
+            <p>At CORAZON, we understand the significance of early detection and prevention when it comes to heart disease. By leveraging the power of machine learning, specifically the Random Forest algorithm, we have developed a robust predictive model that analyzes various health indicators to accurately assess the presence of heart disease.</p>
+        </p>
+        </div>
+    </section>
+
+
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            How It Works
+        </p>
+        <p class="sectionSubTag text-small">
+            <li><b>Accurate Predictions:</b> Our Random Forest model has been trained on a comprehensive dataset and fine-tuned to ensure high accuracy in predicting heart disease. We have rigorously validated the model's performance to instill confidence in its results.</li>
+            <li><b>Privacy and Security:</b> We prioritize the privacy and security of your personal health information. Your data is handled with the utmost care and in compliance with industry standards and regulations. We maintain strict confidentiality to protect your sensitive information.</li>
+        </p>
+        </div>
+    </section>
+
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            Meet Our Supervisor
+        </p>
+        <p class="sectionSubTag text-small">
+            We are fortunate to have the guidance and expertise of Prof. Dr. Md. Ali Hossain from the Department of Computer Science and Engineering at Rajshahi University of Engineering and Technology (RUET). His extensive knowledge in machine learning and his commitment to advancing healthcare applications have been invaluable in the development of CORAZON.
+        </p>
+        </div>
+    </section>
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            Contact
+        </p>
+        <p class="sectionSubTag text-small">
+            <p>We value your feedback and inquiries. If you have any questions, suggestions, or collaboration opportunities, please don't hesitate to reach out. You can contact us at [bhuiyanesmay@gamil.com]</p>
+        <p>
+            Thank you for choosing CORAZON as your partner in predicting heart disease. We are dedicated to making a positive impact on healthcare outcomes through the power of machine learning.</p>
+        </p>
+        </div>
+    </section>
+    
+    <script src = "static/js/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

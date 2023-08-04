@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Medical Report form </title>
+</head>
+<body class="background_1">
+    <nav class="navbar background_1 sticky-top">
+        <ul class="nav-list">
+            <div class="logo"><img src="static/images/logo.jpg" alt="logo"></div>
+            <li><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('form') }}">REPORT CHECKING</a></li>
+        </ul>
+        
+    </nav>
+    <section class="background_1 intro">
+        <h1 class="intro">Fill up the required information</h1>
+        <form action="/submit" method="post">
+            <div class= "bar"> 
+            <label for="age" class = "form-label">Age</label>
+            <input type="text" id="age" name="age" placeholder="Your age.."class = "form-control"><br>
+            
+            
+            <label for="sex" class = "form-label">Sex</label>
+            <select id="sex" name="sex" class="form-select">
+            <option selected>----select option----</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+            </select><br>
+
+            <label for="cp" class = "form-label">Chest Pain Type</label>
+            <select id="cp" name="cp" class="form-select">
+            <option selected>----select option----</option>
+            <option value="0">Typical Angina</option>
+            <option value="1">Atypical Angina</option>
+            <option value="2">Non-anginal Pain</option>
+            <option value="3">Asymtomatic</option>
+            </select><br>
+
+            
+            <label for="trestbps" class = "form-label">Resting Blood Pressure</label>
+            <input type="text" id="trestbps" name="trestbps" placeholder="A number in range [94-200] mmHg" class = "form-control"><br>
+            
+
+
+            <label for="chol" class = "form-label">Serum Cholesterol</label>
+            <input type="text" id="chol" name="chol" placeholder="A number in range [126-564] mg/dl" class = "form-control"><br>
+
+
+
+            <label for="fbs" class = "form-label">Fasting Blood Sugar</label>
+            <select id="fbs" name="fbs" class="form-select">
+            <option selected>----select option----</option>
+            <option value="1">Greater than 120 mg/dl</option>
+            <option value="0">Less than 120 mg/dl</option>
+            </select><br>
+
+            <label for="restecg" class = "form-label">Resting ECG Results</label>
+            <select id="restecg" name="restecg" class="form-select">
+            <option selected>----select option----</option>
+            <option value="0">Normal</option>
+            <option value="1">Having ST-T wave abnormality</option>
+            <option value="2">Probable or definite left ventricular
+            hypertrophy</option>
+            </select><br>
+
+
+            
+            <label for="thalach" class = "form-label">Max Heart Rate </label>
+            <input type="text" id="thalach" name="thalach" placeholder="A number in range [71-202] bpm" class = "form-control"><br>
+            
+            
+            <label for="exang" class = "form-label">Exercise-induced Angina</label>
+            <select id="exang" name="exang" class="form-select">
+            <option selected>----select option----</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+            </select><br>
+
+            <label for="oldpeak" class = "form-label">ST depression</label>
+            <input type="text" id="oldpeak" name="oldpeak" placeholder="ST depression, typically in [0-6.2]" class = "form-control"><br>
+            
+            
+            <label for="slope" class = "form-label">slope of the peak exercise ST segment</label>
+            <select id="slope" name="slope" class="form-select">
+            <option selected>----select option----</option>
+            <option value="0">Upsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Downsloping</option>
+            </select><br>
+
+
+            <label for="ca" class = "form-label">Number of Major vessels</label>
+            <input type="text" id="ca" name="ca" placeholder="Typically in [0-4]" class = "form-control"><br> 
+            
+            <label for="thal" class = "form-label">Thalassemia</label> 
+            <select id="thal" name="thal" class="form-select">
+            <option selected>----select option----</option>
+            <option value="0">Normal</option>
+            <option value="1">Fixed Defect</option> 
+            <option value="2">Reversible Defect</option>  
+            </select><br>
+            <div class="formDesign" >
+                <input type="submit" value="Submit" class="btn form-btn btn-outline-light" > 
+                <input type="reset" value="Reset" class="btn form-btn btn-outline-light"> 
+            </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

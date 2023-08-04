@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Welcome to Corazon</title>
+    
+</head>
+<body class="background">
+    <nav class="navbar background sticky-top">
+        <ul class="nav-list">
+            <div class="logo"><img src="static/images/logo.jpg" alt="logo"></div>
+            <li><a href="{{ url_for('home')}}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('form') }}">REPORT CHECKING</a></li>
+        </ul>
+        
+    </nav>
+    <section class="firstSection mr">
+        <div class="box-main reveal">
+            <div class="firstHalf">
+                <p class="text-big">
+                    Welcome to CORAZON
+                </p>
+                <p class="text-small">
+                    Online heart disease report checking website, where we use machine learning model 
+                    with accurcy 98%
+                </p>
+                
+            </div>
+            <div class="secondHalf">
+                <img src="static/images/logo.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            Lifestyle changes to lower heart disease risk
+        </p>
+        <p class="sectionSubTag text-small">
+            The American College of Cardiology (ACC) and the American Heart Association (AHA) recently published guidelines detailing lifestyle and behavioral recommendations to reduce the risk of cardiovascular disease (CVD) in those who do not yet have it. The guidelines addressed diet and nutrition, exercise and physical activity, body weight, and tobacco use. They draw from existing evidence that healthier lifestyle choices can reduce the risk of premature death and disability due to heart disease.
+            The ACC/AHA guidelines included specific dietary recommendations such as eating a diet high in vegetables, fruit, legumes, nuts, whole grains, and fish. They also recommend limiting sodium, saturated fats, refined carbohydrates, sweetened beverages, and processed meats, and omitting trans fats.
+        </p>
+        </div>
+        <div class="thumbnail reveal">
+            <img src="static/images/tag1.jpg" width="500px" alt="imgfluid" class="imgFluid">
+        </div>
+    </section>
+    <section class ="section left">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            Heart-Healthy Food Habit
+        </p>
+        <p class="sectionSubTag text-small">
+            Heart-healthy eating, along with regular exercise or physical activity, can lower your risk of heart disease and other CVD. Especially, food habit has a great impact on our heart's health. Heart-friendly eating habit can help prevent and manage high blood pressure, high cholesterol, or heart failure. If a person is worried about heart disease, one of the most important things he can do is to start eating a heart-healthy diet.
+            
+        </p>
+        </div>
+        <div class="thumbnail reveal">
+            <img src="static/images/food.jpg" width="500px" alt="imgfluid" class="imgFluid">
+        </div>
+    </section>
+    <section class ="section">
+        <div class="peras reveal">
+        <p class="sectionTag text-big">
+            What other lifestyle changes can I make to lower my risk of heart disease?
+        </p>
+        <p class="sectionSubTag text-small">
+            A healthy lifestyle involves a range of healthy behaviors. One way to think about heart disease risks and corresponding lifestyle changes is the acronym ABCDES:
+            <li>Alcohol</li>
+            <li>Blood pressure</li>
+            <li>Cholesterol</li>
+            <li>Diabetes</li>
+            <li>Exercise</li>
+            <li>Smoking</li>
+            Let's go through each of these elements.
+            The ACC/AHA guidelines included specific dietary recommendations such as eating a diet high in vegetables, fruit, legumes, nuts, whole grains, and fish. They also recommend limiting sodium, saturated fats, refined carbohydrates, sweetened beverages, and processed meats, and omitting trans fats.
+        </p>
+        </div>
+        <div class="thumbnail reveal">
+            <img src="static/images/heart.jpg" alt="imgfluid" class="imgFluid">
+        </div>
+    </section>
+    <script src = "static/js/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
